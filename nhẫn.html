@@ -1,0 +1,525 @@
+<html>
+    <head>
+        <title>nhẫn</title>
+        <style>
+            *{box-sizing:border-box}
+            /* Slideshow container */
+            .slideshow-container
+            {
+                width: 330px;
+                height: 300px;
+                position: relative;
+                margin: auto;
+            }
+            /* Hide the images by default */
+            .mySlides1,.mySlides2
+            {
+            display: none;
+            }
+            /* Next & previous buttons */
+            .prev, .next
+            {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.5s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            /* Position the "next button" to the right */
+            .next
+            {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover
+            {
+            background-color: rgba(0,0,0,0.8);
+            }
+            /* Caption text */
+            .text
+            {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            /* Number text (1/3 etc) */
+            .numbertext
+            {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            /* The dots/bullets/indicators */
+            .dot
+            {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active, .dot:hover
+            {
+                background-color: #717171;
+            }
+            /* Fading animation */
+            .fade
+            {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            @keyframes fade
+            {
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+            .sls
+            {
+                border: 0;
+                margin: 0;
+                width: 100%;
+                height:500px;
+                position: absolute;
+                top: 400px;
+            }
+            .sls1
+            {
+                border: 0;
+                margin-top: 520px;
+                width: 100%;
+                height: 500px;
+                position: absolute;
+                top: 400px;
+            }
+            .slide
+            {
+                height: 400px;
+                width: 24.5%;
+                margin: 3px;
+                float: left;
+            }
+            .slide:hover
+            {
+                border: 1px solid black;
+                display: block;
+            }
+            .n
+            {
+                position: absolute;
+                margin:3px;
+                border: 0;
+                background: url(thiết\ kế\ giày\ sandals\ mùa\ hè.jpg);
+                background-size: 300px 300px;
+                height: 300px;
+                width: 300px;
+            }
+            .n:hover
+            {
+                border: 1px solid black;
+                background: url(túi\ tote\ cho\ mọi\ phong\ cách\ của\ bạn.jpg);
+                background-size: 300px 300px;
+                transition: 1s;
+            }
+            article
+            {
+                position: absolute;
+                z-index: 1;
+                top:20%;
+                width: 100%;
+                height: 1200px;
+            }
+            footer
+            {
+                position: absolute;
+                top:220%;
+                z-index: 1;
+                margin: 0;
+                border: 0;
+                width: 100%;
+                height: 40%;
+                background-color: rgba(26, 20, 20, 0.816);
+                font-size: 20px;
+                color:white;
+            }
+        </style>
+        <link href="css_louisa.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <marquee width="100%" behavior="alternate"><span style="color: white;text-decoration: none;font-family:Times New Roman">Thời trang cao cấp cho mọi lứa tuổi</span></marquee>
+        </header>
+        <nav>
+            <div>
+                <a href="trang_sau_dn.html" style="text-decoration: none;font-size: 35px;margin-right:75% ;font-weight: bolder;color:black">LOUISA</a>
+                <span>
+                    <a href="" class="nav1">Tìm cửa hàng</a>
+                </span>
+                <span><a href="louisa.html" class="dx">Đăng xuất</a></span>
+                <div style="margin: 5px;">
+                    <ul class="hmenu">
+                        <li><a href="">QUẦN ÁO</a>
+                            <ul class="vmenu">
+                                <li><a href="quần áo đi tiệc.html">Quần áo đi tiệc</a></li>
+                                <li><a href="">Quần áo trẻ em</a></li>
+                                <li><a href="">Quần áo ở nhà</a></li>
+                                <li><a href="">Quần áo đông</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">NƯỚC HOA</a>
+                            <ul class="vmenu">
+                                <li><a href="nước hoa Dior.html">Nước hoa Dior</a></li>
+                                <li><a href="">Nước hoa Gucci</a></li>
+                                <li><a href="">Nước hoa Louisa</a></li>
+                                <li><a href="">Nước hoa tự nhiên</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">GIÀY</a>
+                            <ul class="vmenu">
+                                <li><a href="giày Sandals.html">Giày Sandals</a></li>
+                                <li><a href="giày cao gót.html">Giày cao gót</a></li>
+                                <li><a href="">Giày búp bê</a></li>
+                                <li><a href="">Giày trẻ em</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">TÚI</a>
+                            <ul class="vmenu">
+                                <li><a href="">Túi đeo vai</a></li>
+                                <li><a href="túi xách.html">Túi xách</a></li>
+                                <li><a href="">Túi tote</a></li>
+                                <li><a href="">Túi đeo chéo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">VÍ</a>
+                            <ul class="vmenu">
+                                <li><a href="túi ví nhỏ.html">Túi ví nhỏ</a></li>
+                                <li><a href="">Ví đựng thẻ</a></li>
+                                <li><a href="">Ví dài</a></li>
+                                <li><a href="">Ví nhỏ cầm tay</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">KÍNH MẮT</a>
+                            <ul class="vmenu">
+                                <li><a href="kính mắt gọng mèo.html">Kính mắt gọng mèo</a></li>
+                                <li><a href="">Kính mắt gọng vuông</a></li>
+                                <li><a href="">Kính mắt gọng tròn</a></li>
+                                <li><a href="">Kính mắt gọng cánh bướm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">TRANG SỨC</a>
+                            <ul class="vmenu">
+                                <li><a href="">Khuyên tai</a></li>
+                                <li><a href="nhẫn.html">Nhẫn</a></li>
+                                <li><a href="">Dây chuyền</a></li>
+                                <li><a href="">Vòng tay</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <article>
+            <div style="text-align: center;">
+                <span style="font-size: 25px;font-weight: bold;"><br><br>Nhẫn<br><br></span>
+                <span style="font-size: 15px;">
+                    Một người phụ nữ không bao giờ có quá nhiều nhẫn. Cho dù bạn thích nhẫn màu vàng, vàng hồng hoặc bạc,<br>
+                    những chiếc nhẫn xinh đẹp và hiện đại của chúng tôi sẽ làm nổi bật đôi tay của bạn. Bạn có thể đeo chúng một mình<br>
+                    hoặc xếp chồng chúng lại với nhau để tạo ra một diện mạo độc đáo. Đừng ngại khi kết hợp các loại kim loại khác nhau<br>
+                    để tạo ra một phong cách màu sắc rực rỡ
+                </span>
+            </div>
+            <div class="sls">
+                <div class="slide">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides1 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="nhẫn 1.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides1 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="nhẫn 2.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides1 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="nhẫn 3.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Three</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot1" onclick="currentSlide1(1)"></span>
+                        <span class="dot1" onclick="currentSlide1(2)"></span>
+                        <span class="dot1" onclick="currentSlide1(3)"></span>
+                    </div>
+                    <br>
+                    <div style="text-align: center;font-size: 25px;"><span style="font-size: 15px;">Gabine Swarovski Crystal Chain-Link Ring</span><br>300$</div>
+                </div>
+                <div class="slide">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides2 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="nhẫn 4.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides2 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="nhẫn 5.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides2 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="nhẫn 6.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Three</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot2" onclick="currentSlide2(1)"></span>
+                        <span class="dot2" onclick="currentSlide2(2)"></span>
+                        <span class="dot2" onclick="currentSlide2(3)"></span>
+                    </div>
+                    <br>
+                    <div style="text-align: center;font-size: 25px;"><span style="font-size: 15px;">Zira Crystal Chain-Link Open Ring</span><br>200$</div>
+                </div>
+                <div class="slide">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides3 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="nhẫn 7.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides3 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="nhẫn 8.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides3 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="nhẫn 9.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Three</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot3" onclick="currentSlide3(1)"></span>
+                        <span class="dot3" onclick="currentSlide3(2)"></span>
+                        <span class="dot3" onclick="currentSlide3(3)"></span>
+                    </div>
+                    <br>
+                    <div style="text-align: center;font-size: 25px;"><span style="font-size: 15px;">Swarovski® Crystal Open Ring</span><br>500$</div>
+                </div>
+                <div class="slide">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides4 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="nhẫn 10.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides4 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="nhẫn 11.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides4 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="nhẫn 12.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Three</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot4" onclick="currentSlide4(1)"></span>
+                        <span class="dot4" onclick="currentSlide4(2)"></span>
+                        <span class="dot4" onclick="currentSlide4(3)"></span>
+                    </div>
+                    <br>
+                    <div style="text-align: center;font-size: 25px;"><span style="font-size: 15px;">Swarovski® Crystal Studded Ring</span><br>650$</div>
+                </div>
+            </div>
+            <div class="sls1">
+                <div class="slide">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides5 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="nhẫn 13.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides5 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="nhẫn 14.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides5 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="nhẫn 15.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Three</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot5" onclick="currentSlide5(1)"></span>
+                        <span class="dot5" onclick="currentSlide5(2)"></span>
+                        <span class="dot5" onclick="currentSlide5(3)"></span>
+                    </div>
+                    <br>
+                    <div style="text-align: center;font-size: 25px;"><span style="font-size: 15px;">Medal Ring</span><br>210$</div>
+                </div>
+                <div class="slide">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides6 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="nhẫn 16.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides6 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="nhẫn 17.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides6 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="nhẫn 18.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Three</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot6" onclick="currentSlide6(1)"></span>
+                        <span class="dot6" onclick="currentSlide6(2)"></span>
+                        <span class="dot6" onclick="currentSlide6(3)"></span>
+                    </div>
+                    <br>
+                    <div style="text-align: center;font-size: 25px;"><span style="font-size: 15px;">Swarovski® Crystal Geometric Ring</span><br>200$</div>
+                </div>
+                <div class="slide">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides7 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="nhẫn 19.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides7 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="nhẫn 20.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides7 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="nhẫn 21.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Three</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides7(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides7(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot7" onclick="currentSlide7(1)"></span>
+                        <span class="dot7" onclick="currentSlide7(2)"></span>
+                        <span class="dot7" onclick="currentSlide7(3)"></span>
+                    </div>
+                    <br>
+                    <div style="text-align: center;font-size: 25px;"><span style="font-size: 15px;">Pearl & Crystal-Embellished Wide-Band Ring</span><br>170$</div>
+                </div>
+                <div class="slide">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides8 fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="nhẫn 22.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides8 fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="nhẫn 23.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides8 fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="nhẫn 24.jpg" style="width:100%;height: 100%;">
+                            <div class="text">Caption Three</div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides8(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides8(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot8" onclick="currentSlide8(1)"></span>
+                        <span class="dot8" onclick="currentSlide8(2)"></span>
+                        <span class="dot8" onclick="currentSlide8(3)"></span>
+                    </div>
+                    <br>
+                    <div style="text-align: center;font-size: 25px;"><span style="font-size: 15px;">Pearl & Crystal-Embellished Ring</span><br>220$</div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div style="position: absolute;bottom: 20px;right: 20px;">
+                CÔNG TY CỔ PHẦN LOUISA<br>
+                Địa chỉ: 189 Hai Bà Trưng, Hà Nội<br>
+                Mã số doanh nghiệp: 0313175103 | Ngày cấp: 23/03/2015 | Nơi cấp: Tp. HN<br>
+                Hotline: 1900 252 538 | Email: customers@Louisa.vn
+            </div>
+        </footer>
+        <script src="slide.js"></script>
+    </body>
+</html>
